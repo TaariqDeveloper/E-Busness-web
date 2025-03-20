@@ -4,7 +4,7 @@ const CustomerModel = require("../model/CustomerModel")
 
 const CreateCustomer = async (req, res) => {
         try {
-                const newCustomer = CustomerModel(req.body)
+                const newCustomer = CustomerModel(req.body).Select("-password")
                 const saveCustomer = await newCustomer.save()
                 if (saveCustomer) {
                 res.send(saveCustomer)
