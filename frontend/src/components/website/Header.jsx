@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLock } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+
 function Header() {
   return (
     <header className="bg-[#1E293B] py-6 px-20 flex items-center justify-between shadow-md">
@@ -34,7 +35,7 @@ function Header() {
           </button>
         </NavLink>
 
-        <NavLink to="/Login">
+        <NavLink to="/CustomerLogin">
           <button className="border border-teal-400 text-teal-400 px-4 py-2 rounded-md hover:bg-teal-500 hover:text-white">
             Login
           </button>

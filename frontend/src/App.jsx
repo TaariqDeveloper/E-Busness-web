@@ -7,6 +7,7 @@ import Dashboard from "./pages/website/Dashboard";
 import ProductDashboard from "./pages/website/ProductDashboard";
 import AddProduct from "./pages/website/AddProduct";
 import UpdateProduct from "./pages/website/UpdateProduct";
+import CustomerLogin from "./pages/website/CustomerLogin";
 function App() {
   return (
     <Routes>
@@ -16,6 +17,7 @@ function App() {
       <Route path="/ProductDashboard" element={<ProductDashboard />} />
       <Route path="/AddProduct" element={<AddProduct />} />
       <Route path="/UpdateProduct/:id" element={<UpdateProduct />} />
+      <Route path="/CustomerLogin" element={<CustomerLogin />} />
     </Routes>
   );
 }

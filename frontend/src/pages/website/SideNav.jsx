@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaBox, FaUsers, FaShoppingCart, FaUserShield } from "react-icons/fa";
+import {
+  FaBox,
+  FaUsers,
+  FaShoppingCart,
+  FaUserShield,
+  FaTachometerAlt, // Corrected Dashboard Icon
+} from "react-icons/fa";
 
 function SideNav() {
   return (
@@ -10,7 +16,13 @@ function SideNav() {
         <h2 className="text-2xl font-bold mb-6 text-center">Admin Dashboard</h2>
         <ul className="space-y-4">
           <li className="flex items-center gap-3 p-3 rounded-lg cursor-pointer hover:bg-slate-600">
-            <FaBox />{" "}
+            <FaTachometerAlt /> {/* Fixed Icon */}
+            <Link to="/dashboard">
+              <span>Dashboard</span>
+            </Link>
+          </li>
+          <li className="flex items-center gap-3 p-3 rounded-lg cursor-pointer hover:bg-slate-600">
+            <FaBox />
             <Link to="/ProductDashboard">
               <span>Products</span>
             </Link>
